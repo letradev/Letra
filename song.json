@@ -1,0 +1,77 @@
+{
+	"letra": {
+		"item": {
+			"id": "1",
+			"author": {
+				"dob": "12/2/1018",
+				"dod": "",
+				"about": "",
+				"nick_name": "",
+				"name": "",
+				"author_id": "1"
+			},
+			"history": "",
+			"bible_reference": "",
+			"category_id": [
+				"1",
+				"2",
+				"3"
+			],
+			"song": [
+				{
+					"notes": "",
+					"font": "unicode",
+					"isOrginal": "true",
+					"isFav": "true",
+					"status": "true",
+					"language": {
+						"languge_id": "1",
+						"label": "Malayalam"
+					},
+					"url": [
+						],
+					"lyrics": "ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍ സ്ത്രോത്രത്തോടെന്നും
+ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍  നന്നിയോടെന്നും
+ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍  നന്മയോടെന്നും
+ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ
+
+നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  ദ്യാനത്തോടിന്നു
+നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  മോധമോടിന്നു
+നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  കീര്തനതിനാല്‍
+ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ
+
+ നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍   പൂര്ന്നനായ്
+നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍  ഭാഗ്യവാന്‍
+നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍ ധന്യനായ്
+ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ "
+				},
+				{
+					"notes": "",
+					"font": "unicode",
+					"isOrginal": "false",
+					"isFav": "true",
+					"status": "true",
+					"language": {
+						"languge_id": "2",
+						"label": "Manglish"
+					},
+					"url": [],
+					"lyrics": "Aaraadhikkunnu njangal nin sannidhiyil sthrothratthodennum
+aaradhikkunnu njangal nin sannidhiyil nanniyodennum
+aaradhikkunnu njangal nin sannidhiyil nanmayodennum
+aaraadhikkaam yesu karthaavine
+
+namme sarvam marannu than sannidhiyil dyanathodinnu
+namme sarvam marannu than sannidhiyil modamodinnu
+namme sarvam marannu than sannidhiyil keerthanathinaal
+aaraadhikkaam yesu karthaavine
+
+neeyen sarva neethiyum aaayitheernnathaal njaan poornnanaay
+neeyen sarva neethiyum aaayitheernnathaal njaan bhaagyavaan
+neeyen sarva neethiyum aaayitheernnathaal njaan dhanyanaay
+aaraadhikkaam yesu karthaavine"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_add_box_black_48dp"
+            android:title="@string/text_search" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_add_box_black_48dp"
+            android:title="@string/text_favourite" />
+        <item
+            android:id="@+id/nav_new_song"
+            android:icon="@drawable/ic_add_box_black_48dp"
+            android:title="@string/text_add_new_song" />
+        <item
+            android:id="@+id/nav_new_author"
+            android:icon="@drawable/ic_add_box_black_48dp"
+            android:title="@string/text_add_new_author" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_add_box_black_48dp"
+                android:title="@string/text_share" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_add_box_black_48dp"
+                android:title="@string/text_about" />
+        </menu>
+    </item>
+
+</menu>
