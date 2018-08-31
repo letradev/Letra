@@ -1,6 +1,5 @@
 package com.athul.letra.domain.api
 
-import com.athul.letra.domain.pojo.LetraResponse
 import retrofit2.http.GET
 
 import retrofit2.Call
