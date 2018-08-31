@@ -1,75 +1,220 @@
 {
-	"letra": {
-		"item": {
-			"id": "1",
-			"author": {
-				"dob": "12/2/1018",
-				"dod": "",
-				"about": "",
-				"nick_name": "",
-				"name": "",
-				"author_id": "1"
-			},
-			"history": "",
-			"bible_reference": "",
-			"category_id": [
-				"1",
-				"2",
-				"3"
-			],
+	"db": {
+		"songs": {
 			"song": [
 				{
-					"notes": "",
-					"font": "unicode",
-					"isOrginal": "true",
-					"isFav": "true",
+					"id": "1",
+					"author": "authorId",
+					"bibleReference": "Pas:11:11",
+					"aboutSong": "the story behind the song",
+					"category": "category_of_the_song",
+					"date_of_publish": "2018",
+					"title": "title of the song",
+					"view_count": "12",
+					"tag": "tags1,tags2",
+					"notes": "extra informations",
+					"updated_date": "12/12/12",
+					"created_date": "12/12/12",
 					"status": "true",
-					"language": {
-						"languge_id": "1",
-						"label": "Malayalam"
-					},
-					"url": [
-						],
-					"lyrics": "ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍ സ്ത്രോത്രത്തോടെന്നും
-ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍  നന്നിയോടെന്നും
-ആരാധിക്കുന്നു  ഞങ്ങള്‍  നിന്‍  സന്നിധിയില്‍  നന്മയോടെന്നും
-ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ
-
-നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  ദ്യാനത്തോടിന്നു
-നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  മോധമോടിന്നു
-നമ്മെ  സര്‍വം  മറന്നു  തന്‍  സന്നിധിയില്‍  കീര്തനതിനാല്‍
-ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ
-
- നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍   പൂര്ന്നനായ്
-നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍  ഭാഗ്യവാന്‍
-നീയെന്‍  സര്‍വ്വ  നീതിയും  ആയിതീര്ന്നതാല്‍  ഞാന്‍ ധന്യനായ്
-ആരാധിക്കാം  യേശു  കര്‍ത്താവിനെ "
+					"credit_id": [
+						"1",
+						"2",
+						"3"
+					],
+					"lyrics": [
+						{
+							"isOrginal": "true",
+							"language": "Malayalam",
+							"font": "font",
+							"time_stamp": "12/12/12",
+							"translated_by": "null",
+							"links": [
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								}
+							],
+							"keys": [
+								{
+									"instrument": "keyboard",
+									"note": "keyboard keys"
+								},
+								{
+									"instrument": "guitar",
+									"note": "guitar keys"
+								}
+							],
+							"lyric": "മലയാളം വരികൾ "
+						},
+						{
+							"isOrginal": "false",
+							"language": "English",
+							"font": "font",
+							"translated_by": "author_id",
+							"time_stamp": "12/12/12",
+							"links": [
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								}
+							],
+							"keys": [
+								{
+									"instrument": "keyboard",
+									"note": "keyboard keys"
+								},
+								{
+									"instrument": "guitar",
+									"note": "guitar keys"
+								}
+							],
+							"lyric": "English Lyrics"
+						}
+					]
 				},
 				{
-					"notes": "",
-					"font": "unicode",
-					"isOrginal": "false",
-					"isFav": "true",
+					"id": "1",
+					"author": "authorId",
+					"bibleReference": "Pas:11:11",
+					"aboutSong": "the story behind the song",
+					"category": "category_of_the_song",
+					"date_of_publish": "2018",
+					"title": "title of the song",
+					"view_count": "12",
+					"tag": "tags1,tags2",
+					"notes": "extra informations",
+					"updated_date": "12/12/12",
+					"created_date": "12/12/12",
 					"status": "true",
-					"language": {
-						"languge_id": "2",
-						"label": "Manglish"
-					},
-					"url": [],
-					"lyrics": "Aaraadhikkunnu njangal nin sannidhiyil sthrothratthodennum
-aaradhikkunnu njangal nin sannidhiyil nanniyodennum
-aaradhikkunnu njangal nin sannidhiyil nanmayodennum
-aaraadhikkaam yesu karthaavine
-
-namme sarvam marannu than sannidhiyil dyanathodinnu
-namme sarvam marannu than sannidhiyil modamodinnu
-namme sarvam marannu than sannidhiyil keerthanathinaal
-aaraadhikkaam yesu karthaavine
-
-neeyen sarva neethiyum aaayitheernnathaal njaan poornnanaay
-neeyen sarva neethiyum aaayitheernnathaal njaan bhaagyavaan
-neeyen sarva neethiyum aaayitheernnathaal njaan dhanyanaay
-aaraadhikkaam yesu karthaavine"
+					"credit_id": [
+						"1",
+						"2",
+						"3"
+					],
+					"lyrics": [
+						{
+							"isOrginal": "true",
+							"language": "Malayalam",
+							"font": "font",
+							"time_stamp": "12/12/12",
+							"translated_by": "null",
+							"links": [
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								}
+							],
+							"keys": [
+								{
+									"instrument": "keyboard",
+									"note": "keyboard keys"
+								},
+								{
+									"instrument": "guitar",
+									"note": "guitar keys"
+								}
+							],
+							"lyric": "മലയാളം വരികൾ "
+						},
+						{
+							"isOrginal": "false",
+							"language": "English",
+							"font": "font",
+							"translated_by": "author_id",
+							"time_stamp": "12/12/12",
+							"links": [
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								},
+								{
+									"url": "http://www.youtube.com/1",
+									"time_stamp": "12/12/12"
+								}
+							],
+							"keys": [
+								{
+									"instrument": "keyboard",
+									"note": "keyboard keys"
+								},
+								{
+									"instrument": "guitar",
+									"note": "guitar keys"
+								}
+							],
+							"lyric": "English Lyrics"
+						}
+					]
+				}
+			]
+		},
+		"authors": {
+			"author": [
+				{
+					"id": "1",
+					"name": "Name",
+					"notes": "notes",
+					"dob": "12/12/12",
+					"dod": "12/12/12",
+					"place": "Place of the author",
+					"url": "any links",
+					"about": "
+					about the author"
+				},
+				{
+					"id": "2",
+					"name": "Name",
+					"notes": "notes",
+					"place": "Place of the author",
+					"url": "any links",
+					"dob": "12/12/12",
+					"dod": "12/12/12",
+					"about": "about the author"
+				}
+			]
+		},
+		"credits": {
+			"credit": [
+				{
+					"id": "1",
+					"name": "Name",
+					"social": "fblink",
+					"email": "mail@email.com",
+					"notes": "notes"
+				},
+				{
+					"id": "2",
+					"name": "Name",
+					"social": "fblink",
+					"email": "mail@email.com",
+					"notes": "notes"
+				},
+				{
+					"id": "3",
+					"name": "Name",
+					"social": "fblink",
+					"email": "mail@email.com",
+					"notes": "notes "
 				}
 			]
 		}
