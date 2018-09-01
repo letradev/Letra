@@ -1,222 +1,211 @@
 {
-	"db": {
-		"songs": {
-			"song": [
-				{
-					"id": "1",
-					"author": "authorId",
-					"bibleReference": "Pas:11:11",
-					"aboutSong": "the story behind the song",
-					"category": "category_of_the_song",
-					"date_of_publish": "2018",
-					"title": "title of the song",
-					"view_count": "12",
-					"tag": "tags1,tags2",
-					"notes": "extra informations",
-					"updated_date": "12/12/12",
-					"created_date": "12/12/12",
-					"status": "true",
-					"credit_id": [
-						"1",
-						"2",
-						"3"
-					],
-					"lyrics": [
-						{
-							"isOrginal": "true",
-							"language": "Malayalam",
-							"font": "font",
-							"time_stamp": "12/12/12",
-							"translated_by": "null",
-							"links": [
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								}
-							],
-							"keys": [
-								{
-									"instrument": "keyboard",
-									"note": "keyboard keys"
-								},
-								{
-									"instrument": "guitar",
-									"note": "guitar keys"
-								}
-							],
-							"lyric": "മലയാളം വരികൾ "
-						},
-						{
-							"isOrginal": "false",
-							"language": "English",
-							"font": "font",
-							"translated_by": "author_id",
-							"time_stamp": "12/12/12",
-							"links": [
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								}
-							],
-							"keys": [
-								{
-									"instrument": "keyboard",
-									"note": "keyboard keys"
-								},
-								{
-									"instrument": "guitar",
-									"note": "guitar keys"
-								}
-							],
-							"lyric": "English Lyrics"
-						}
-					]
-				},
-				{
-					"id": "1",
-					"author": "authorId",
-					"bibleReference": "Pas:11:11",
-					"aboutSong": "the story behind the song",
-					"category": "category_of_the_song",
-					"date_of_publish": "2018",
-					"title": "title of the song",
-					"view_count": "12",
-					"tag": "tags1,tags2",
-					"notes": "extra informations",
-					"updated_date": "12/12/12",
-					"created_date": "12/12/12",
-					"status": "true",
-					"credit_id": [
-						"1",
-						"2",
-						"3"
-					],
-					"lyrics": [
-						{
-							"isOrginal": "true",
-							"language": "Malayalam",
-							"font": "font",
-							"time_stamp": "12/12/12",
-							"translated_by": "null",
-							"links": [
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								}
-							],
-							"keys": [
-								{
-									"instrument": "keyboard",
-									"note": "keyboard keys"
-								},
-								{
-									"instrument": "guitar",
-									"note": "guitar keys"
-								}
-							],
-							"lyric": "മലയാളം വരികൾ "
-						},
-						{
-							"isOrginal": "false",
-							"language": "English",
-							"font": "font",
-							"translated_by": "author_id",
-							"time_stamp": "12/12/12",
-							"links": [
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								},
-								{
-									"url": "http://www.youtube.com/1",
-									"time_stamp": "12/12/12"
-								}
-							],
-							"keys": [
-								{
-									"instrument": "keyboard",
-									"note": "keyboard keys"
-								},
-								{
-									"instrument": "guitar",
-									"note": "guitar keys"
-								}
-							],
-							"lyric": "English Lyrics"
-						}
-					]
-				}
-			]
-		},
-		"authors": {
-			"author": [
-				{
-					"id": "1",
-					"name": "Name",
-					"notes": "notes",
-					"dob": "12/12/12",
-					"dod": "12/12/12",
-					"place": "Place of the author",
-					"url": "any links",
-					"about": "
-					about the author"
-				},
-				{
-					"id": "2",
-					"name": "Name",
-					"notes": "notes",
-					"place": "Place of the author",
-					"url": "any links",
-					"dob": "12/12/12",
-					"dod": "12/12/12",
-					"about": "about the author"
-				}
-			]
-		},
-		"credits": {
-			"credit": [
-				{
-					"id": "1",
-					"name": "Name",
-					"social": "fblink",
-					"email": "mail@email.com",
-					"notes": "notes"
-				},
-				{
-					"id": "2",
-					"name": "Name",
-					"social": "fblink",
-					"email": "mail@email.com",
-					"notes": "notes"
-				},
-				{
-					"id": "3",
-					"name": "Name",
-					"social": "fblink",
-					"email": "mail@email.com",
-					"notes": "notes "
-				}
-			]
-		}
-	}
+  "db": {
+    "songs": {
+      "song": [
+        {
+          "id": "1",
+          "author": "1",
+          "bibleReference": "",
+          "aboutSong": "",
+          "category": "1",
+          "date_of_publish": "1990",
+          "title": "Azhalerum jeevitha maruvil nee Thalarukayo ini sahaje",
+          "view_count": "0",
+          "tag": "",
+          "notes": "",
+          "updated_date": "2018",
+          "created_date": "2018",
+          "status": "true",
+          "credit_id": [
+            "1"
+          ],
+          "lyrics": [
+            {
+              "isOrginal": "true",
+              "language": "Malayalam",
+              "font": "font",
+              "time_stamp": "2018",
+              "translated_by": "null",
+              "links": [
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                },
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                },
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                }
+              ],
+              "keys": [
+                {
+                  "instrument": "keyboard",
+                  "note": "keyboard keys"
+                },
+                {
+                  "instrument": "guitar",
+                  "note": "guitar keys"
+                }
+              ],
+              "lyric": "അഴലേറും ജീവിത മരുവില്‍ നീ <br>തളരുകയോ ഇനി സഹജേ<br> നിന്നെ വിളിച്ചവന്‍ ഉണ്മ-യുള്ലോന്‍<br> കണ്ണിന്‍മണി പോലെ കാത്തീടുമേ<br> അന്ത്യംവരെ വഴുതാതെയവന്‍<br>താങ്ങി നടത്തിടും പൊന്‍കരത്താല്‍...    അഴലേറും<br> കാര്‍മുകി-ലേറെ കരേറുകിലും<br> കാണുനില്ലേ മഴവില്ലതിന്‍മേല്‍<br> കരുതുക വേണ്ടാതിന്‍ ഭീകരങ്ങള്‍<br> കെടുതികള്‍ തീര്‍ത്തവന്‍ തഴുകീടുമേ....   അഴലേറും<br> മരുഭൂപ്രയാണത്തില്‍ ചാരീടുവാന്‍<br> ഒരു നല്ല നായകന്‍ നിനക്കില്ലയോ<br> കരുതും നിനക്കവന്‍ വേണ്ടതെല്ലാം<br> തളരാതെ യാത്ര തുടര്‍ന്നീടുക.          അഴലേറും<br> ചേലോടു തന്ദ്രങ്ങള്‍ ഓതീടുവാന്‍<br> ചാരന്‍മാരുണ്ടതികം സഹജേ<br> ചുടുചോര ചിന്തേണ്ടിവന്നീടിലും<br> ചായല്ലേ ഈ ലോക താങ്ങുകളില്‍...     അഴലേറും<br> കൈയ്പുള്ള വെള്ളം കുടിച്ചീടിലും<br> കല്പനപോലെ നടന്നീടെണം<br>  എല്പിക്കയില്ലവന്‍ ശത്രുകൈയില്‍<br>  സ്വര്‍പൂരം നീ അണയും വരെയും...     അഴലേറും"
+            },
+            {
+              "isOrginal": "false",
+              "language": "Manglish",
+              "font": "",
+              "translated_by": "1",
+              "time_stamp": "2018",
+              "links": [
+                {
+                  "url": "https://www.youtube.com/watch?v=WPuNehn9dFE",
+                  "time_stamp": "12/10/2018"
+                }
+              ],
+              "keys": [
+                {
+                  "instrument": "",
+                  "note": ""
+                }
+              ],
+              "lyric": "Azhalerum jeevitha maruvil nee<br>Thalarukayo ini sahaje<br> Ninne vilichavan oonma-yullon<br>Kannin mani pole kaatheedume<br>Anthyam vare vazhuthaatheyavan<br>Thangi nadathedum ponkarathaal...<br>Azhalerum...<br> Kaarmukil-ereikkarerukilum<br>Kaanunnille mazha villathinmel<br>Karuthuka vendathin bheekarangel<br> Keduthikal theerthavan thazhukeedume<br> Azhalerum...<br>Marubhoo prayaanathil chaareeduvaan<br>Oru nalla nayakan ninakkillayo<br>Karuthum ninakkavan vendathellaam<br>Thalarathe yaathra thudarnneeduka<br>Azhalerum...<br> Chelodu thanthrangal otheeduvaan<br>Charanmarumndadhikam sahaje!<br>Chuduchora chinthendi vanneedilum<br>Chaayalle eeloka thangukalil <br>Azhalerum...<br>Kaippulla vellam kudicheedilum<br>Kalpana pole nadanneedanam<br>Eelpikka-yillavan sathru kaiyyil<br>Swarppuram nee anayum varayum<br>Azhalerum..."
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "author": "authorId",
+          "bibleReference": "Pas:11:11",
+          "aboutSong": "the story behind the song",
+          "category": "category_of_the_song",
+          "date_of_publish": "2018",
+          "title": "title of the song",
+          "view_count": "12",
+          "tag": "tags1,tags2",
+          "notes": "extra informations",
+          "updated_date": "12/12/12",
+          "created_date": "12/12/12",
+          "status": "true",
+          "credit_id": [
+            "1",
+            "2",
+            "3"
+          ],
+          "lyrics": [
+            {
+              "isOrginal": "true",
+              "language": "Malayalam",
+              "font": "font",
+              "time_stamp": "12/12/12",
+              "translated_by": "null",
+              "links": [
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                },
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                },
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                }
+              ],
+              "keys": [
+                {
+                  "instrument": "keyboard",
+                  "note": "keyboard keys"
+                },
+                {
+                  "instrument": "guitar",
+                  "note": "guitar keys"
+                }
+              ],
+              "lyric": "മലയാളം വരികൾ "
+            },
+            {
+              "isOrginal": "false",
+              "language": "English",
+              "font": "font",
+              "translated_by": "author_id",
+              "time_stamp": "12/12/12",
+              "links": [
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                },
+                {
+                  "url": "http://www.youtube.com/1",
+                  "time_stamp": "12/12/12"
+                }
+              ],
+              "keys": [
+                {
+                  "instrument": "keyboard",
+                  "note": "keyboard keys"
+                },
+                {
+                  "instrument": "guitar",
+                  "note": "guitar keys"
+                }
+              ],
+              "lyric": "English Lyrics"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": {
+      "author": [
+        {
+          "id": "1",
+          "name": "Muttom Geevarghese/",
+          "notes": "ഈ മരുഭൂമിയാത്രയിൽ 92 വർഷം പിന്നിടുവാൻ അപ്പച്ചനെ ഇന്ന് ദൈവം സഹായിച്ചു... വിശ്വാസജീവിതത്തിൽ 72 വർഷവും , പൂർണ്ണസമയം സുവിശേഷകനായി 70 വർഷവും കർത്താവിന്റെ വയലിൽ അധ്വാനിച്ചു കൊണ്ടിരിക്കുന്നു ... തുടർന്നും ദൈവം തന്നെ ഏൽപ്പിച്ച ശുശ്രൂഷ നിറപടിയാകുംവണ്ണം",
+          "dob": "1926",
+          "dod": "",
+          "place": "Chennithala,Kerala",
+          "url": "https://www.facebook.com/pg/Pr-John-Varghese-Muttom-Gee-Varghese-165208046856878",
+          "about": "പതിമൂണഠഠ വയനൃമ്മീതി ക൪സ്പഠടക സഠഗീതഠ പഠിക്കമ്മൂകയമ്മൂഠ മലയഠളഠ വിദാഠനി പഠനഠ നടതതുകയമ്മൂഠ ഒചയ്ത ഞഠ൯ ഇരുപതഠം വയഗൂമ്മിതി രക്ഷീക്കഒപ്പട്ടമ്മൂഠ ആ കഠലത്തമ്മൂ തഒസ ഗഠനങ്ങശ എഴുതഠറമ്മൂണ്ടഠയമ്മിരമ്മൂഞമ്മൂ- സമ്മിഠലഠബി ഒപഒഞഭക്കഠസ്ത് പ്രവ൪ത്തനകനഠയമ്മിരമ്മൂണ ഞഠ൯ എഴുതിയ പഠട്ടമ്മൂകശ ആ കഠലത്ത് പഠട്ടു പമ്മൂസ്തകങ്ങളമ്മീതി പ്രസമ്മിദ്ധമ്മീകരിച്ചീട്ടുണ്ടളൂ അന്നു് എഴുത്തമ്മൂകഠരമ്മൂഒട ഭപരു് പഠട്ടിഒനഠപ്പഠ ഭച൪ക്കമ്മൂഞ പതിവില്ലഠയിരമ്മൂണമ്മൂ- 1955 ലഠഞ് എഒന്റ വിവഠഹഠ നടസതളൂ 1957-59 കഠലത്ത് പത്തമ്മിയതു൪ ഭഗവതി പടിക്കതി തഠമസമ്മീച്ചമ്മൂ പ്രവ൪ത്തമ്മിക്കമ്മൂഭമ്പഠ൯ 16 ദിവസഭത്തഠളഠ പട്ടീണമ്മി കിടസ അവസരം ഉണ്ടഠയി- ഒടൂവിതി പതിനഠറാഠദമ്മീനഠ അല്പഠ അരികമ്മിട്ടമ്മിയത് കഞ്ഞമ്മീഒവച്ച് കമ്മൂടമ്മീച്ചുഠ പട്ടിണമ്മീ നിതമ്മൂ സഠഭവഠയീരുസമ്മൂ ആ കഠലത്ത്ഠ ഇത്തരഒമഠരു ഭവളയമ്മിതി തള൪സമ്മൂ കിടസ ഭഠരൃദയഠട് പഠടിയഗഠനമാണ് അഴദലറജൂഠ ജമ്മീവതമരുവിതി നമ്മീതളരുകഠയഠ ഇനി (manage ng)<mco‘3'. ഞഠ൯ എഒന്റ ഭാരൃ ലിലഠമ്മഒയ സ്ഭനഹപതു൪വൃഠ (manage എസഠണ് വിളിച്ചീരുഞതു് gab’ എഒന്റ momma വഠസമ്മികഗിക്കമ്മൂഠ egg; പ്രവ൪ത്തക൪ക്കമ്മൂഒമഠഒക്ക അറിവമ്മൂള്ളകഠരമ്മൂമഠണ്ഠ ഇനു പട്ടിണമ്മി ദിനങ്ങളമ്മിതി തജൂശതു൪ കമ്മൂണഠകമ്മൂളഒത്ത ഒകഠ വി- ദജഠസഫമ്മൂഠകതുട്ടരമ്മൂഠ ഞങ്ങഭളഠഒടഠപ്പഠ mm? തഠമസമ്മിക്കമ്മൂകയമ്മൂഠ ഇന ഗഠനഠ അവദരഠഒടഠപ്പഠ പഠടുകയമ്മൂഠ ഒചയ്തജൂ- അവ൪ ആ ഗഠനഠ കമ്മൂണഠകമ്മൂളഠ എവഒറഡമ്മി പ്രസ്പമ്മിതി അച്ചടമ്മിച്ച mag; പമ്മൂസ്തകത്തമ്മിതി ഉഗിഒപ്പടമ്മൂത്തമ്മൂകയമൃഠ ഒചയ്തമ്മൂ-"
+        },
+        {
+          "id": "2",
+          "name": "Name",
+          "notes": "notes",
+          "place": "Place of the author",
+          "url": "any links",
+          "dob": "12/12/12",
+          "dod": "12/12/12",
+          "about": "about the author"
+        }
+      ]
+    },
+    "credits": {
+      "credit": [
+        {
+          "id": "1",
+          "name": "Athul Babu",
+          "social": "fblink",
+          "email": "athulcek@email.com",
+          "notes": ""
+        },
+        {
+          "id": "2",
+          "name": "Name",
+          "social": "fblink",
+          "email": "mail@email.com",
+          "notes": "notes"
+        },
+        {
+          "id": "3",
+          "name": "Name",
+          "social": "fblink",
+          "email": "mail@email.com",
+          "notes": "notes "
+        }
+      ]
+    }
+  }
 }
