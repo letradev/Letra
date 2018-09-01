@@ -18,6 +18,7 @@ import com.athul.letra.domain.database.tables.Lyrics
 import com.athul.letra.domain.database.tables.Song
 import com.athul.letra.domain.parser.VSongs
 import com.athul.letra.databinding.ActivityHomeBinding
+import com.athul.letra.domain.pojo.Response
 import com.athul.letra.domain.repository.ApiResquest
 import com.athul.letra.features.ui.home.viewmodel.HomeViewModel
 import com.athul.letra.features.ui.newauthor.view.NewAuthor
@@ -46,8 +47,6 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     lateinit var viewModel: HomeViewModel
 
-    @Inject
-    lateinit var apiResquest: ApiResquest
 
     val binding: ActivityHomeBinding by lazy {
         DataBindingUtil.setContentView<ActivityHomeBinding>(this, R.layout.activity_home)
@@ -76,21 +75,7 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         nav_view.setCheckedItem(R.id.nav_search)
 
         replaceFragment(searchFragment, R.id.fragment)
-
-
-
-
-        doAsync {
-
-            populate()
-
-            if (apiResquest != null) {
-
-                var re = apiResquest.getSong();
-                // print(re.toString())
-            }
-
-        }
+        viewModel.fetchSong();
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()

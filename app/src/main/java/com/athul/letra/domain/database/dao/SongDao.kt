@@ -6,9 +6,6 @@ import android.arch.persistence.room.Query
 import com.athul.letra.domain.database.BaseDao
 import com.athul.letra.domain.database.tables.Song
 
-/**
- * Created by zco developer on 11-04-2018.
- */
 @Dao
 interface SongDao : BaseDao<Song> {
 

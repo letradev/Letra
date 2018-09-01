@@ -8,9 +8,7 @@ import com.athul.letra.ui.basecomponent.managers.SettingsManager
 import dagger.Module
 import dagger.Provides
 
-/**
- * Created by zco developer on 13-04-2018.
- */
+
 @Module
 class SettingsModule {
 

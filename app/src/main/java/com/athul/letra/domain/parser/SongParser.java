@@ -4,10 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-/**
- * Created by athulbabu on 15/11/16.
- */
-
 @XStreamAlias("song")
 public class SongParser
 {

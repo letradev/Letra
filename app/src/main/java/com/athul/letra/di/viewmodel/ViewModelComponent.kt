@@ -13,9 +13,7 @@ import com.athul.letra.features.ui.song.SongActivity
 import com.athul.letra.features.ui.song.view.SongFragment
 import dagger.Subcomponent
 
-/**
- * Created by zco developer on 13-04-2018.
- */
+
 
 @Subcomponent(
         modules = arrayOf(

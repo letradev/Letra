@@ -7,9 +7,6 @@ import android.arch.persistence.room.PrimaryKey
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-/**
- * Created by athulbabu on 25/03/18.
- */
 @Entity(tableName = "Language")
 data class Language(
 

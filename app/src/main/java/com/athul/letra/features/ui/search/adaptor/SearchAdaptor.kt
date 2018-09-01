@@ -10,9 +10,6 @@ import com.athul.letra.R
 import com.athul.letra.domain.database.tables.Song
 import kotlinx.android.synthetic.main.row_search.view.*
 
-/**
- * Created by zco developer on 19-04-2018.
- */
 
 class SearchAdaptor(val items: List<Song>, val listener: (Song) -> Unit) : Adapter<SearchAdaptor.ViewHolder>() {
 

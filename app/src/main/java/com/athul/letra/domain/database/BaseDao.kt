@@ -2,9 +2,7 @@ package com.athul.letra.domain.database
 
 import android.arch.persistence.room.*
 
-/**
- * Created by  on 18-04-2018.
- */
+
 @Dao
 interface BaseDao<T> {
 

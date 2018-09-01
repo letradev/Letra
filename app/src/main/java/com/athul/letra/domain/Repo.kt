@@ -7,9 +7,6 @@ import com.athul.letra.domain.database.tables.Song
 import retrofit2.Retrofit
 import javax.inject.Inject
 
-/**
- * Created by  developer on 11-04-2018.
- */
 
 class Repo @Inject constructor(var appDatabase: AppDatabase) {
 

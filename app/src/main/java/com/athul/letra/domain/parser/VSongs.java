@@ -3,9 +3,6 @@ package com.athul.letra.domain.parser;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by athulbabu on 15/11/16.
- */
 
 
 

@@ -6,9 +6,6 @@ import com.athul.letra.domain.database.tables.Language
 import com.athul.letra.domain.database.tables.Lyrics
 
 
-/**
- * Created by  on 18-04-2018.
- */
 class LyricswithLanguage {
 
     @Embedded

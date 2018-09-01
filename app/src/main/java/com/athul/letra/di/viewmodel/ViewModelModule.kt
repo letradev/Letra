@@ -10,9 +10,6 @@ import dagger.Module
 import dagger.Provides
 
 
-/**
- * Created by zco developer on 13-04-2018.
- */
 @Module
 class ViewModelModule
 constructor(private val activity: FragmentActivity) {

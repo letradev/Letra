@@ -7,9 +7,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 
-/**
- * Created by zco developer on 13-04-2018.
- */
+
 @Module
 abstract class ViewModelBuilder {
 

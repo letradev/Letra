@@ -7,9 +7,6 @@ import com.athul.letra.domain.database.tables.Lyrics
 import com.athul.letra.domain.database.tables.Song
 
 
-/**
- * Created by   on 18-04-2018.
- */
 class SongwithLyrics {
 
     @Embedded

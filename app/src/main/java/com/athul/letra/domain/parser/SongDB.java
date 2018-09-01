@@ -7,10 +7,6 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by athulbabu on 15/11/16.
- */
-
 @XStreamAlias("songDB")
 public class SongDB {
 

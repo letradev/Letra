@@ -8,9 +8,7 @@ import android.arch.persistence.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import android.arch.persistence.room.ColumnInfo
 
-/**
- * Created by zco developer on 11-04-2018.
- */
+
 @Entity(tableName = "Author", foreignKeys = [(ForeignKey(entity = Song::class,
         parentColumns = arrayOf("id"),
         childColumns = arrayOf("songs_id"),
