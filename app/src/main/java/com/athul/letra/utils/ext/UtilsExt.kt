@@ -7,10 +7,10 @@ import java.util.*
  */
 
 fun Any?.toString(): String {
-    if (this == null) return "null"
+    if (this == null) return ""
     // after the null check, 'this' is autocast to a non-null type, so the toString() below
     // resolves to the member function of the Any class
-    return toString()
+    return toString().trim()
 }
 
 

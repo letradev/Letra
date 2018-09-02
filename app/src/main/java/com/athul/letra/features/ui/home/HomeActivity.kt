@@ -1,6 +1,5 @@
 package com.athul.letra.features.ui.home
 
-import android.app.Activity
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
@@ -12,28 +11,20 @@ import android.view.Gravity
 import android.view.MenuItem
 import com.athul.letra.R
 import com.athul.letra.application.AppConstants
-import com.athul.letra.domain.Repo
-import com.athul.letra.domain.database.AppDatabase
-import com.athul.letra.domain.database.tables.Lyrics
-import com.athul.letra.domain.database.tables.Song
-import com.athul.letra.domain.parser.VSongs
 import com.athul.letra.databinding.ActivityHomeBinding
-import com.athul.letra.domain.pojo.Response
-import com.athul.letra.domain.repository.ApiResquest
+import com.athul.letra.domain.database.AppDatabase
 import com.athul.letra.features.ui.home.viewmodel.HomeViewModel
 import com.athul.letra.features.ui.newauthor.view.NewAuthor
 import com.athul.letra.features.ui.search.view.SearchFragment
 import com.athul.letra.features.ui.song.view.FavouriteSong
 import com.athul.letra.features.ui.song.view.NewSongFragment
 import com.athul.letra.ui.basecomponent.views.BaseActivity
-import com.athul.letra.utils.ext.*
-import com.google.gson.Gson
-import fr.arnaudguyon.xmltojsonlib.XmlToJson
+import com.athul.letra.utils.ext.addFragment
+import com.athul.letra.utils.ext.replaceFragment
+import com.athul.letra.utils.ext.setfullscreen
+import com.athul.letra.utils.ext.toastLong
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.content_home.*
-import org.jetbrains.anko.doAsync
-import java.io.BufferedReader
-import java.io.IOException
 import javax.inject.Inject
 
 class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -75,7 +66,12 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         nav_view.setCheckedItem(R.id.nav_search)
 
         replaceFragment(searchFragment, R.id.fragment)
+
+
         viewModel.fetchSong();
+
+
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
@@ -83,6 +79,7 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     }
 
     private fun observers() {
+
 
     }
 
@@ -138,56 +135,5 @@ class HomeActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         return true;
     }
 
-    private fun populate() {
-        var repo: Repo = Repo(appDatabase)
-        var ff: Long = repo.getTotalCount()
-        if (ff > 0) {
-            return
-        }
-
-
-        var string: String = "{}"
-
-        var iss = assets.open("malayalamplus.xml")
-        try {
-
-            string = iss.bufferedReader().use(BufferedReader::readText)
-
-        } catch (e: IOException) {
-
-        } finally {
-
-        }
-
-        val xmlToJson = XmlToJson.Builder(string).build()
-        val jsonObject = xmlToJson.toJson()
-        val gson = Gson()
-        val gg = gson.fromJson<VSongs>(jsonObject.toString(), VSongs::class.java!!)
-
-
-        for (parser in gg.songDB.song) {
-
-            var song: Song = Song(title = parser.name, id = null)
-            var id = repo.insert(song)
-
-            var lyrics1: Lyrics = Lyrics(id = null, songs_id = id, language_id = 0, font = parser.font2, lyrics = parser.slide2)
-            var lyrics2: Lyrics = Lyrics(id = null, songs_id = id, language_id = 1, font = parser.font, lyrics = parser.slide)
-
-            repo.insert(lyrics1)
-            repo.insert(lyrics2)
-
-        }
-
-
-//        for (i in 1..10) {
-//            getSaltString(8)
-//            var s: Song = Song(null, getSaltString(8), getSaltString(18), getSaltString(8), 1, true, false)
-//            var id = db?.songsDao()?.insert(s)
-//            for (j in 1..3) {
-//                var l: Lyrics = Lyrics(null, i.toLong(), getSaltString(38), j.toLong(), "", "", j.toLong(), true)
-//                db?.lyricsDao()?.insert(l)
-//            }
-//        }
-    }
 
 }

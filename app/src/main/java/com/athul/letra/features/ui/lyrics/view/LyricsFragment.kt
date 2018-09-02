@@ -3,6 +3,7 @@ package com.athul.letra.features.ui.search.view
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,9 @@ import com.athul.letra.utils.ext.toast
 import com.github.nitrico.fontbinder.FontBinder
 import kotlinx.android.synthetic.main.fragment_lyrics.*
 import javax.inject.Inject
+import android.os.Build
+import android.text.Spanned
+
 
 class LyricsFragment : BaseFragment() {
 
@@ -57,10 +61,18 @@ class LyricsFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
         viewmodel = ViewModelProviders.of(this, viewModelFactory).get(HomeViewModel::class.java)
 
-        tv_lyrics.text = lyrics.lyrics
+        tv_lyrics.text = fromHtml(lyrics.lyric)
         tv_lyrics.typeface = FontBinder[lyrics.font.toLowerCase()]
         toast(lyrics.font)
 
+    }
+
+    fun fromHtml(html: String): Spanned {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY)
+        } else {
+            Html.fromHtml(html)
+        }
     }
 
 }

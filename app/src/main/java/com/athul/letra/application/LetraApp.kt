@@ -1,12 +1,9 @@
 package com.athul.letra.application
 
 import android.app.Application
-import com.athul.letra.domain.parser.SongDB
-import com.athul.letra.domain.parser.VSongs
 import com.athul.letra.di.application.ApplicationComponent
 import com.athul.letra.di.application.ApplicationModule
 import com.athul.letra.di.application.DaggerApplicationComponent
-
 import timber.log.Timber
 import javax.inject.Inject
 

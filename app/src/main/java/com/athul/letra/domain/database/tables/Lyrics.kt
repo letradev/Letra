@@ -16,7 +16,7 @@ import com.google.gson.annotations.SerializedName
  */
 
 @Entity(tableName = "Lyrics", foreignKeys = [(ForeignKey(entity = Song::class,
-        parentColumns = arrayOf("id"),
+        parentColumns = arrayOf("index"),
         childColumns = arrayOf("songs_id"),
         onDelete = ForeignKey.CASCADE))])
 
@@ -24,7 +24,7 @@ data class Lyrics
 (
         @Expose
         @PrimaryKey(autoGenerate = true)
-        var id: Long?,
+        var index: Long?,
 
         @Expose
         @SerializedName("songs_id")
@@ -33,9 +33,9 @@ data class Lyrics
 
 
         @Expose
-        @SerializedName("lyrics")
-        @ColumnInfo(name = "lyrics")
-        var lyrics: String,
+        @SerializedName("lyric")
+        @ColumnInfo(name = "lyric")
+        var lyric: String,
 
         @Expose
         @SerializedName("language_id")
@@ -49,14 +49,15 @@ data class Lyrics
         var font: String = "",
 
         @Expose
-        @SerializedName("url")
-        @ColumnInfo(name = "url")
-        var url: String = "",
+        @SerializedName("translated_by")
+        @ColumnInfo(name = "translated_by")
+        var translated_by: String = "",
 
         @Expose
-        @SerializedName("author_id")
-        @ColumnInfo(name = "author_id")
-        var author_id: Long = 0,
+        @SerializedName("timeStamp")
+        @ColumnInfo(name = "timeStamp")
+        var timeStamp: String = "",
+
 
         @Expose
         @SerializedName("isOrginal")
@@ -72,18 +73,18 @@ data class Lyrics
             parcel.readLong(),
             parcel.readString(),
             parcel.readString(),
-            parcel.readLong(),
+            parcel.readString(),
             parcel.readByte() != 0.toByte()) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeValue(id)
+        parcel.writeValue(index)
         parcel.writeLong(songs_id)
-        parcel.writeString(lyrics)
+        parcel.writeString(lyric)
         parcel.writeLong(language_id)
         parcel.writeString(font)
-        parcel.writeString(url)
-        parcel.writeLong(author_id)
+        parcel.writeString(translated_by)
+        parcel.writeString(timeStamp)
         parcel.writeByte(if (isOrginal) 1 else 0)
     }
 
@@ -101,3 +102,4 @@ data class Lyrics
         }
     }
 }
+

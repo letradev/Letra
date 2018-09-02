@@ -72,7 +72,7 @@ class SearchFragment : BaseFragment() {
 
         recycler_view.adapter = SearchAdaptor(songs) {
             var bundle: Bundle = Bundle()
-            bundle.putLong(AppConstants.SONG_ID, it.id!!)
+            bundle.putLong(AppConstants.SONG_ID, it.index!!)
             movetoActivity(activity as HomeActivity, SongActivity::class.java, bundle)
 
         }

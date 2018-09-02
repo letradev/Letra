@@ -7,7 +7,7 @@ import android.arch.persistence.room.Query
 @Dao
 interface CommonDao {
 
-    @Query("SELECT * FROM songs WHERE id = :id")
+    @Query("SELECT * FROM songs WHERE `index` = :id")
     fun getSongs(id: Long): SongwithLyrics
 
 

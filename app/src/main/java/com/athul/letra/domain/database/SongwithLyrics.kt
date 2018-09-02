@@ -12,9 +12,9 @@ class SongwithLyrics {
     @Embedded
     lateinit var song: Song
 
-    @Relation(parentColumn = "id", entityColumn = "songs_id")
+    @Relation(parentColumn = "index", entityColumn = "songs_id")
     var lyrics: List<Lyrics>? = null
-    @Relation(parentColumn = "id", entityColumn = "songs_id")
+    @Relation(parentColumn = "index", entityColumn = "songs_id")
     var author: List<Author>? = null
 
 

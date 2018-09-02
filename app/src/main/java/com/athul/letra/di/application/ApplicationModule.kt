@@ -29,7 +29,8 @@ open class ApplicationModule constructor(private val xApplication: LetraApp) {
     @ApplicationScope
     @Provides
     fun provideDb(app: Application): AppDatabase {
-        return Room.databaseBuilder(app, AppDatabase::class.java!!, "xsong.db").build()
+        //return Room.databaseBuilder(app, AppDatabase::class.java!!, "xsong.db").build()
+        return AppDatabase.getInstance(app)!!
     }
 
 
