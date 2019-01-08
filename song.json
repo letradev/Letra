@@ -75,7 +75,7 @@
           ]
         },
         {
-          "id": "1",
+          "id": "2",
           "author": "1",
           "bibleReference": "Pas:11:11",
           "aboutSong": "the story behind the song",
@@ -130,7 +130,7 @@
               "isOrginal": "false",
               "language": "English",
               "font": "font",
-              "translated_by": "author_id",
+              "translated_by": "1",
               "time_stamp": "12/12/12",
               "links": [
                 {
