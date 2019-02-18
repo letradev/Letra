@@ -13,5 +13,6 @@ object AppConstants {
     val SONG_ID: String = "song_id"
     val LYRICS_TEXT_SIZE: String = "lyrics_text_size"
     val LYRICS_KEY: String = "lyrics_key"
+    val KEYS_KEY: String = "key_key"
     val BASE_URL: String = "https://raw.githubusercontent.com"
 }

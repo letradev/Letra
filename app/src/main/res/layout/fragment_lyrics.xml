@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -11,13 +13,30 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
 
-        <TextView
-            android:id="@+id/tv_lyrics"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:showIn="@layout/activity_song">
+
+        <com.athul.letra.features.custom.AutofitTextView
+            android:id="@+id/tv_chorus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp" />
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintTop_toTopOf="parent"
+            autofit:minTextSize="8sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_chorus"
+            app:layout_constraintVertical_bias="0.0"></android.support.v7.widget.RecyclerView>
+
+
     </android.support.constraint.ConstraintLayout>
 </layout>

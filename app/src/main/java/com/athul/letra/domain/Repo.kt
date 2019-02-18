@@ -54,5 +54,10 @@ class Repo @Inject constructor(var appDatabase: AppDatabase) {
 
     }
 
+    fun getKeyForLyricsId(index: Long): Keys {
+        return appDatabase.keysDao().getKeyForLyricsId(index);
+
+    }
+
 
 }

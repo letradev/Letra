@@ -6,6 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
+apply plugin: 'io.fabric'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -21,6 +23,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
     dataBinding {
         enabled = true
@@ -37,7 +40,7 @@ ext {
     gsonVersion = '2.8.5'
     roomDatabaseVersion = '1.1.1'
     anko_version = '0.10.4'
-    retrofit='2.4.0'
+    retrofit = '2.4.0'
     okHttpVersion = "3.4.1"
 
 }
@@ -80,6 +83,7 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$roomDatabaseVersion"
     kapt "android.arch.persistence.room:compiler:$roomDatabaseVersion"
 
+
     //Anko
     // compile "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "org.jetbrains.anko:anko-appcompat-v7-commons:$anko_version"
@@ -105,6 +109,12 @@ dependencies {
     // OkHttp Logging Interceptor
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
 
+
+
+
+    apply plugin: 'com.google.gms.google-services'
 
 }

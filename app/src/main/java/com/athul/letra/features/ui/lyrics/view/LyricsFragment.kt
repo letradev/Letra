@@ -18,7 +18,16 @@ import com.github.nitrico.fontbinder.FontBinder
 import kotlinx.android.synthetic.main.fragment_lyrics.*
 import javax.inject.Inject
 import android.os.Build
+import android.support.v7.widget.LinearLayoutManager
 import android.text.Spanned
+import android.text.method.ScrollingMovementMethod
+import android.widget.LinearLayout
+import com.athul.letra.domain.database.tables.Keys
+import com.athul.letra.domain.pojo.LyricXml
+import com.athul.letra.features.ui.lyrics.adaptor.LyricsAdaptor
+import com.thoughtworks.xstream.XStream
+
+import org.jetbrains.anko.doAsync
 
 
 class LyricsFragment : BaseFragment() {
@@ -56,23 +65,40 @@ class LyricsFragment : BaseFragment() {
         return inflater.inflate(R.layout.fragment_lyrics, container, false)
     }
 
+    private var key: Keys? = null
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         getViewModelComponent().inject(this)
         super.onActivityCreated(savedInstanceState)
         viewmodel = ViewModelProviders.of(this, viewModelFactory).get(HomeViewModel::class.java)
 
-        tv_lyrics.text = fromHtml(lyrics.lyric)
-        tv_lyrics.typeface = FontBinder[lyrics.font.toLowerCase()]
-        toast(lyrics.font)
 
-    }
+        doAsync {
 
-    fun fromHtml(html: String): Spanned {
-        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY)
-        } else {
-            Html.fromHtml(html)
+            key = viewmodel.getKeyForLyricsId(lyrics.index)
         }
+
+        // tv_lyrics.setHtml(lyrics.lyric)
+        //tv_lyrics.movementMethod = ScrollingMovementMethod()
+        // tv_lyrics.typeface = FontBinder[lyrics.font.toLowerCase()]
+        // tv_lyrics.setKeyLyric(lyric = lyrics.lyric, key = key)
+        toast(lyrics.font)
+        val xstream = XStream()
+
+
+        val inputAsString = (lyrics.lyric)
+        xstream.alias("lyric", LyricXml::class.java)
+        xstream.addImplicitCollection(LyricXml::class.java, "verse", String::class.java)
+        var ly: LyricXml = xstream.fromXML(inputAsString) as LyricXml
+
+        tv_chorus.text = ly.getChrous().replace("//br//","\n")
+        rv_lyrics.layoutManager = LinearLayoutManager(context)
+        rv_lyrics.adapter = LyricsAdaptor(ly, listener = {
+
+        });
+
+
     }
+
 
 }

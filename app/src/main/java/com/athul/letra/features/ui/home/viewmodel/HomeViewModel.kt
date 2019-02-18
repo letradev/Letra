@@ -137,5 +137,16 @@ constructor(private val repository: Repo, var apiResquest: ApiResquest) : ViewMo
 
     }
 
+    fun getKeyForLyricsId(index: Long?): Keys? {
+
+        index?.let {
+            return repository.getKeyForLyricsId(index)
+        }
+
+
+
+        return null;
+    }
+
 
 }
