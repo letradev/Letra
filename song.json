@@ -40,7 +40,7 @@
                   "time_stamp": "12/12/12"
                 }
               ],
-              "keys": [
+              "MusicalNote": [
                 {
                   "instrument": "keyboard",
                   "note": "keyboard keys"
@@ -64,7 +64,7 @@
                   "time_stamp": "12/10/2018"
                 }
               ],
-              "keys": [
+              "MusicalNote": [
                 {
                   "instrument": "",
                   "note": ""
@@ -114,7 +114,7 @@
                   "time_stamp": "12/12/12"
                 }
               ],
-              "keys": [
+              "MusicalNote": [
                 {
                   "instrument": "keyboard",
                   "note": "keyboard keys"
@@ -142,7 +142,7 @@
                   "time_stamp": "12/12/12"
                 }
               ],
-              "keys": [
+              "MusicalNote": [
                 {
                   "instrument": "keyboard",
                   "note": "keyboard keys"
