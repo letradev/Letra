@@ -15,13 +15,13 @@
           "notes": "",
           "updated_date": "2018",
           "created_date": "2018",
-          "status": "true",
+          "status": true,
           "credit_id": [
             "1"
           ],
           "lyrics": [
             {
-              "isOrginal": "true",
+              "isOrginal": true,
               "language": "Malayalam",
               "font": "font",
               "time_stamp": "2018",
@@ -87,7 +87,7 @@
           "notes": "extra informations",
           "updated_date": "12/12/12",
           "created_date": "12/12/12",
-          "status": "true",
+          "status": true,
           "credit_id": [
             "1",
             "2",
@@ -95,7 +95,7 @@
           ],
           "lyrics": [
             {
-              "isOrginal": "true",
+              "isOrginal": true,
               "language": "Malayalam",
               "font": "font",
               "time_stamp": "12/12/12",
