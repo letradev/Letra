@@ -3,8 +3,8 @@
     "songs": {
       "song": [
         {
-          "id": "1",
-          "author": "1",
+          "id": 1,
+          "author": 1,
           "bibleReference": "",
           "aboutSong": "",
           "category": "1",
